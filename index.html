@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monk's Cafe</title>
+<link rel="stylesheet" type="text/css" href="monks_style.css">
+</head>
+
+<body>
+	
+	<!-- HEADER -->
+	<header>
+		<h1>Monk's Cafe</h1>
+		<h4>"The Coffee Shop"</h4>
+	</header>
+	
+	
+
+<div id="wrapper">
+	<div id="container">
+
+<!-- BANNER -->
+<div id="main-banner"><img src="images/toms-restaurant-crop.png"></div>
+
+<!-- MAKE A RESERVATION -->
+<div id="make-reservation">
+
+<div id="reservation-container">
+	<h2 class="center block-margin">Make a Reservation</h2>
+		<form>
+			<input type="text" class="field" placeholder="Name"><br>
+			<input type="text" class="field" placeholder="Day"><br>
+			<button>Confirm Reservation</button>
+		</form>
+	</div>
+</div>
+
+<!-- EXISTINGRESERVATIONS -->
+<div id="reservations">
+
+	<h2 class="center block-margin">Existing Reservations</h2>
+
+	<table class="res-table">
+		<thead>
+			<th class="table-header">Name</th>
+			<th class="table-header">Day</th>
+		</thead>
+		
+		<tbody>
+			<tr><td class="form-name">[form NAME]</td><td class="form-day">[form DAY]</td></tr>
+			<tr><td class="form-name">[form NAME]</td><td class="form-day">[form DAY]</td></tr>
+			<tr><td class="form-name">[form NAME]</td><td class="form-day">[form DAY]</td></tr>
+			<tr><td class="form-name">[form NAME]</td><td class="form-day">[form DAY]</td></tr>
+		</tbody>
+	</table>
+
+</div>
+
+<!-- DINE WITH US -->
+
+
+<div id="map-container">
+
+	<h1 class="center margin-bottom">Come Dine with Us!</h1>
+
+	<!-- API ->  -->
+		
+		
+			<div id="map"></div>
+			<script src="js/jquery-3.1.1.min.js"></script>
+			<script src="js/main.js"></script>
+			<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ5je93gccbAt3xuCYyMRFq2P9t8lIqQA&callback=initMap" type="text/javascript"></script>
+		
+</div>
+
+<div id="lower-container">
+	<!-- REVIEWS-->
+	
+
+	<div id="review-container">
+		
+		<h2 id="review-head" class="center">Customer Reviews</h2>
+		
+		<div id="jerry"><img src="images/jerry.png"></div>
+
+		<div id="review">
+		"Big lettuce, big carrots, tomatoes like volleyballs."<br>
+		<span class="review-name">&ndash; Jerry Seinfeld, on The BIG Salad</span>
+		</div>
+
+	</div>
+
+</div>
+
+
+</div>
+</div>
+</body>
+
+</html>

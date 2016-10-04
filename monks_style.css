@@ -1,0 +1,250 @@
+
+/* RESET */
+html, body {margin: 0;}
+
+body {font-family: "arial", san-serif; font-size:.75em;}
+
+h1,h4 {margin:0; color:#ccc;}
+h2,h3,h5 {margin:0; color:#050b2f;}
+
+h1{font-size:3em;}
+h2{margin-bottom:2.5%;}
+h4{font-size:1.5em;}
+
+
+
+/* POSITIONING */
+.center{text-align:center;}
+.block-margin{margin:20px 0;}
+
+
+
+/* FIXED HEADER */
+header{
+	position: fixed;
+	z-index:999999;
+	width:100%;
+	height:80px;
+	color:#fff;
+	text-align:center;
+	background-color:#050b2f;
+	padding-top:15px;
+}
+
+
+
+/* CONTENT FRAMES */
+#wrapper {
+	width:100%;
+	background-color:#ccc;
+	padding-top:80px;
+}
+
+#container {
+	width:60%; 
+	margin:auto; 
+	overflow:hidden;
+	background-color:#fff;
+}
+
+
+
+/* REGIONS */
+#main-banner {
+	width:100%;
+	height:auto; 
+	margin-bottom:2.5%;
+}
+
+#main-banner img{width:100%;}
+
+#lower-container{clear:both; width:100%; margin-bottom:5%;}
+
+
+
+/* RESERVATION */
+#make-reservation {
+	width:450px; 
+	height:200px;
+	clear:right;
+	float:left;
+	border:1px solid #ccc;
+	margin-left:5%;
+	margin-bottom:5%;
+	margin-top:0px;
+	margin-right:0;
+	background-color:#eee;
+}
+
+#reservation-container{width:80%; margin:auto;}
+
+#reservations {
+	width:450px; 
+	height:200px;
+	float:right;
+	border:1px solid #ccc;
+	margin-right:5%;
+	margin-bottom:5%;
+	margin-top:0px;
+	background-color:#eee;
+}
+
+.res-table{
+	color:#050b2f;
+	margin-left:40px;
+}
+
+
+
+/* RESERVATION CONFIRMATION */
+.review-name{font-style: italic; font-size: 15px;}
+.table-header{text-align:left;}
+.field {margin-bottom:5%;}
+.form-name{padding-right:5%; width:100px;}
+
+
+
+/* MAP */
+#map-container{
+	clear:both; 
+	width:100%;
+	margin-bottom:5%;
+	background-color:#050b2f;
+	padding:10px 0;
+}
+
+#map {
+	margin:auto;
+	width:50%;
+	height:300px;
+	margin-top:2%;
+	margin-bottom:5%;
+}
+
+
+
+/* REVIEW */
+#review-container{
+	width:75%;
+	height:225px;
+	margin:auto;
+	margin-top:2.5%;
+	padding-top:2.5%;
+	overflow:none;
+	border:1px solid #000;
+	background-color:#eee;
+}
+
+#review-head {color:#050b2f; font-size:20px;}
+
+#review{
+	font-size:1.6em;
+	width:60%;
+	float:right;
+	margin-left:5%; 
+}
+
+#jerry{width:25%; clear:right; float:left;}
+#jerry img{width:200px; margin-left:10%;}
+
+
+
+/* RESPONSIVE /////////////////////////////////*/
+@media (max-width: 1900px) {
+
+	#make-reservation {width:40%;}
+	#reservations {width:40%;} 
+}
+
+
+
+@media (max-width: 900px) {
+	h1{font-size:1.3em;}
+	h2{font-style: .5em;}
+	h4{font-style: .6em;}
+
+	#wrapper {
+		padding-top:60px;
+	}
+
+	header{
+		height:12%;
+		padding-top:10px;
+	}
+
+	#main-banner {
+		width:100%;
+		height:auto; 
+		margin-bottom:2.5%;
+	}
+
+	#make-reservation {
+		width:100%; 
+		height:200px;
+		clear:right;
+		float:none;
+		margin-left:0px;
+		margin-bottom:5%;
+		margin-top:0px;
+		margin-right:0px;
+		background-image:none;
+		background-repeat:no-repeat;
+		background-color:#eee;
+	}
+
+	#reservation-container{width:80%; margin:auto;}
+
+	#reservations {
+		width:100%; 
+		height:200px;
+		float:none;
+		margin-right:0px;
+		margin-top:0px;
+		background-image:none;
+		background-color:#eee;
+		color:#dcdcdc;
+	}
+
+	.res-table{
+		margin-left:10px;
+	}
+
+	.field{width:95%;}
+	.form-name{font-size:.8em;}
+	.form-day{font-size:.8em;}
+
+	#map {
+		margin:auto;
+		width:50%;
+		height:150px;
+		margin-top:2%;
+		margin-bottom:5%;
+	}
+
+
+	#jerry{width:100%; height:auto; clear:none; float:none;}
+	#jerry img{width:85%; margin-left:8%;}
+
+	#review-head {font-size:15px;}
+
+	#review{
+		width:100%;
+		text-align:center;
+		float:none;
+		margin-left:0; 
+		font-size:.95em;
+	}
+
+	.review-name{font-size:.75em;}
+
+	#review-container{
+		width:75%;
+		height:185px;
+		margin:auto;
+		margin-top:2.5%;
+		padding-top:2.5%;
+		overflow:none;
+		border:1px solid #000;
+		background-color:#eee;
+}
+}
